@@ -6,16 +6,5 @@
  Version:      0.0.1
  GitHub Theme URI: https://github.com/ashwinncj/twentytwentyone-diadem-child
 */
-/*
- Child theme styles - Stylesheet for Diadem Press Child theme
-*/
-.site-logo {
-  max-width: 300px;
-}
 
-#ddp-header {
-  margin: auto;
-  max-width: 1200px;
-}
-
-/*# sourceMappingURL=style.css.map */
+@import "css/ddp-style";
