@@ -1,0 +1,10 @@
+/*
+ Description:  Stylesheet for Diadem Press Child theme
+ Author:       Ashwin Kumar C
+ Version:      0.0.1
+*/
+
+#ddp-header {
+	margin: auto;
+	max-width: 1200px;
+}
