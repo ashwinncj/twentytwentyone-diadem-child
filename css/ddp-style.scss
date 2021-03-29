@@ -12,3 +12,27 @@ $site_logo_width : 300px;
 	margin: auto;
 	max-width: $site_max_desktop_width;
 }
+
+.ddp-primary-menu {
+	position: relative;
+	> li {
+		display: inline;
+		letter-spacing: 1px;
+		padding-right: 10px;
+	}
+
+	.menu-item-has-children {
+		.sub-menu {
+			display:none;
+			position: absolute;
+			list-style-type: none;
+			left:0;
+			top:20px;
+		}
+		&:hover {
+			.sub-menu {
+				display: block;
+			}
+		}
+	}
+}

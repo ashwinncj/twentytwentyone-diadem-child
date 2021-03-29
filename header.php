@@ -27,7 +27,14 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 		<div id="ddp-header-subscribe" class="pure-u-1-2">
 		</div>
 	</div>
-	<div id="ddp-header-sticky-nav" class="pure-g">
-
+	<div id="ddp-header-sticky-nav">
+	<?php
+	wp_nav_menu(
+		array(
+			'theme_location' => 'primary',
+			'menu_class'     => 'ddp-primary-menu',
+		)
+	);
+	?>
 	</div>
 </div>
