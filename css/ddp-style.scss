@@ -4,7 +4,8 @@
 
 $site_max_desktop_width : 1200px;
 $site_logo_width : 300px;
-
+$primary-sub-menu-background-color : #dbd7d7;
+$primary-sub-menu-hover-background-color : #d6cccc;
 .site-logo {
 	max-width: $site-logo_width;
 }
@@ -19,6 +20,12 @@ $site_logo_width : 300px;
 		display: inline;
 		letter-spacing: 1px;
 		padding-right: 10px;
+		position: relative;
+
+		a {
+			padding: 10px;
+			text-decoration: none;
+		}
 	}
 
 	.menu-item-has-children {
@@ -27,10 +34,20 @@ $site_logo_width : 300px;
 			position: absolute;
 			list-style-type: none;
 			left:0;
-			top:20px;
+			top:30px;
+			padding: 0px;
+
+			li {
+				padding: 10px 15px;
+				&:hover{
+					background-color: $primary-sub-menu-hover-background-color;
+				}
+			}
 		}
 		&:hover {
+			background-color: $primary-sub-menu-background-color;
 			.sub-menu {
+				background-color: $primary-sub-menu-background-color;
 				display: block;
 			}
 		}

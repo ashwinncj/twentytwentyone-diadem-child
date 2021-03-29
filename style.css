@@ -25,15 +25,31 @@
   display: inline;
   letter-spacing: 1px;
   padding-right: 10px;
+  position: relative;
+}
+.ddp-primary-menu > li a {
+  padding: 10px;
+  text-decoration: none;
 }
 .ddp-primary-menu .menu-item-has-children .sub-menu {
   display: none;
   position: absolute;
   list-style-type: none;
   left: 0;
-  top: 20px;
+  top: 30px;
+  padding: 0px;
+}
+.ddp-primary-menu .menu-item-has-children .sub-menu li {
+  padding: 10px 15px;
+}
+.ddp-primary-menu .menu-item-has-children .sub-menu li:hover {
+  background-color: #d6cccc;
+}
+.ddp-primary-menu .menu-item-has-children:hover {
+  background-color: #dbd7d7;
 }
 .ddp-primary-menu .menu-item-has-children:hover .sub-menu {
+  background-color: #dbd7d7;
   display: block;
 }
 
